@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class PDLReader {
     public static void main(String[] args) throws IOException {
-        String API_KEY = "";
+        String API_KEY = "3ef38b80a0bd6d818a6489022c8cd1256555b42332559b83407bdae0ee5da8de";
         String query = URLEncoder.encode("SELECT NAME FROM COMPANY WHERE WEBSITE='ucu.edu.ua'", StandardCharsets.UTF_8);
         URL url = new URL("https://api.peopledatalabs.com/v5/company/search?sql=" + query);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
